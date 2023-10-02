@@ -7,15 +7,17 @@
         mc:Ignorable="d"
         Title="CanvasRectangle" Width="800" Height="600" Background="#F5F5F5">
     <Grid>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Background="Gray" Margin="0,0,0,469" Width="800" Panel.ZIndex = "6">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Top" Background="Gray" Margin="0,0,0,469" Width="Auto" Height="100" Panel.ZIndex = "6">
 
         </StackPanel>
 
         <ScrollViewer Name = "ScrollViewer" HorizontalScrollBarVisibility = "Hidden" VerticalScrollBarVisibility = "Hidden" Grid.RowSpan="2">
-            <Canvas Name="SnackRun" Background="#F5F5F5" Margin="10,96,10,10">
+            <Canvas Name="SnackRun" Background="#F5F5F5" Margin="10,96,10,10" MouseMove="Canvas_MouseMove">
+                <Label Name="mousePositionLabel" Content="Mouse Position: (X, Y)" FontSize="12" Foreground="Black" Background="White" />
 
             </Canvas>
         </ScrollViewer>
+        
 
 
 
